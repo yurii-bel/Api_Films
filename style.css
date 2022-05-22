@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body{
+    margin-top: 20px;
+}
+.container{
+    position: relative;
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container>h2{
+    color: #fff;
+    padding-top: 40px;
+}
+
+.info{
+    position: absolute;
+    margin: 0 auto;
+    background-color: rgb(228, 228, 228);
+    height: auto;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 20px 10px black;
+    margin-bottom: 40px;
+}
+.info>.card{
+    margin: 20px auto;
+    background-color: rgb(226, 226, 226);
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px rgb(209, 209, 209);
+    transition: all 0.1s ease-in-out;
+}
+.info>.card:hover{
+    cursor: pointer;
+    transform: translate(2px, -2px);
+    box-shadow: 0 0 10px 3px rgb(255, 255, 255);
+}
+.info>.card>ul{
+    list-style-type: none;
+}
+
+
+li.title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+li.description{
+    font-size: 2rem;
+    font-style: italic;
+}
+li.director{
+    font-weight: bold;
+    color: rgb(211, 0, 0);
+}
+li.producer{
+    font-weight: bold;
+    color: rgb(0, 132, 155);
+}
+li.date{
+    font-weight: bold;
+    color: rgb(219, 0, 135);
+}
+li.score{
+    font-size: 5rem;
+    text-align: end;
+    padding-right: 30px;
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+}
+li>span{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: normal;
+    color: rgb(124, 124, 124);
+}

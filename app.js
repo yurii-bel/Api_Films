@@ -2,7 +2,6 @@ document.querySelector('.get-info').addEventListener('click', getInfo);
 const infoDiv = document.querySelector('.info');
 
 function getInfo(e){
-    // const number = document.querySelector('input[type="text"]').value;
     
     const xhr = new XMLHttpRequest();
     xhr.open('GET', `https://ghibliapi.herokuapp.com/films`, true);
@@ -26,7 +25,6 @@ function getInfo(e){
                 liTitle.classList.add('title');
                 liTitle.textContent = element.title;
                 ul.appendChild(liTitle);
-
                 
                 // description
                 liDesc.classList.add('description');
@@ -53,8 +51,6 @@ function getInfo(e){
                 liScore.textContent = element.rt_score;
                 ul.appendChild(liScore);
 
-
-
                 card.appendChild(ul);
 
                 infoDiv.appendChild(card);
@@ -63,8 +59,6 @@ function getInfo(e){
 
         }
     }
-
         xhr.send();
-
         e.preventDefault();
     }

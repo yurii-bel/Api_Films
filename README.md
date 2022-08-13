@@ -1,5 +1,5 @@
 # Api_Films
-Getting list of films from API
+Getting a list of movies via API
 - XMLHttpRequest
 - HTML
 - CSS
